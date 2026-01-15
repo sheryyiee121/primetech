@@ -461,18 +461,15 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-5">
-                  <div className="flex items-center justify-between mb-2">
+                  <div className="mb-2">
                     <span className="text-xs px-2 py-0.5 bg-slate-100 text-slate-600 rounded">
                       {laptop.category}
-                    </span>
-                    <span className="text-xl font-bold text-sky-600">
-                      ${laptop.price}
                     </span>
                   </div>
                   <h3 className="text-lg font-semibold mb-1 text-slate-900">{laptop.name}</h3>
                   <p className="text-sm text-slate-500 mb-4">{laptop.specs}</p>
                   <a
-                    href={getWhatsAppLink(`Hi! I'm interested in ${laptop.name} - ${laptop.specs} at $${laptop.price}`)}
+                    href={getWhatsAppLink(`Hi! I'm interested in ${laptop.name} - ${laptop.specs}. Please share the price.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full py-2.5 text-sm bg-green-500 hover:bg-green-600 text-white rounded-lg transition-colors flex items-center justify-center gap-2"
